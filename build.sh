@@ -15,14 +15,15 @@ if [ -f "$ZIP_FILE" ]; then
 fi
 
 # Create the zip archive
-zip -j "$ZIP_FILE" \
+zip -r "$ZIP_FILE" \
     content.js \
     manifest.json \
     options.html \
     options.js \
     options.css \
     popup.html \
-    popup.js
+    popup.js \
+    icons
 
 echo "Successfully created package: $ZIP_FILE"
 
