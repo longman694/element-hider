@@ -24,3 +24,11 @@ zip -j "$ZIP_FILE" \
     popup.js
 
 echo "Successfully created package: $ZIP_FILE"
+
+# Generate checksums
+echo ""
+echo "Checksums for $ZIP_FILE:"
+sha1sum "$ZIP_FILE" | tee "${ZIP_FILE}.sha1"
+md5sum "$ZIP_FILE" | tee "${ZIP_FILE}.md5"
+
+echo "Checksums saved to ${ZIP_FILE}.sha1 and ${ZIP_FILE}.md5"
