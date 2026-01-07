@@ -2,6 +2,11 @@
   "manifest_version": 3,
   "name": "Element Hider",
   "version": "0.1",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "element-hider@example.com"
+    }
+  },
   "permissions": ["storage", "activeTab"],
   "action": {
     "default_popup": "popup.html"
