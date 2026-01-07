@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hider Settings</title>
-    <style>
-        body { font-family: sans-serif; padding: 20px; width: 400px; }
-        .rule-item { border-bottom: 1px solid #ccc; padding: 10px 0; display: flex; justify-content: space-between; }
-        input { margin-bottom: 10px; width: 100%; padding: 5px; }
-        button { cursor: pointer; }
-        .edit-btn, .delete-btn { color: red; border: none; background: none; }
-    </style>
+    <title>Element Hider Settings</title>
+    <link rel="stylesheet" href="options.css">
 </head>
 <body>
-    <h2>Element Hider Config</h2>
-    
-    <input type="text" id="domain" placeholder="Domain (e.g., example.com)">
-    <input type="text" id="selector" placeholder="CSS Selector (e.g., .ad-banner)">
-    <button id="save">Add Rule</button>
-    <button id="cancel" style="display:none;">Cancel Edit</button>
+    <div class="container">
+        <h2>Element Hider Settings</h2>
 
-    <hr>
-    <div id="rule-list"></div>
+        <div class="form-container">
+            <input type="text" id="domain" placeholder="Domain (e.g., example.com)">
+            <input type="text" id="selector" placeholder="CSS Selector(s), comma-separated">
+            <div class="button-group">
+                <button id="save">Add Rule</button>
+                <button id="cancel" style="display:none;">Cancel</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Existing Rules</h3>
+        <div id="rule-list"></div>
+    </div>
 
     <script src="options.js"></script>
 </body>

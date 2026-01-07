@@ -20,6 +20,7 @@ zip -j "$ZIP_FILE" \
     manifest.json \
     options.html \
     options.js \
+    options.css \
     popup.html \
     popup.js
 
