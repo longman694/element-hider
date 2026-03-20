@@ -16,6 +16,7 @@ function hideElements(selectors) {
     // Using CSS is more efficient than looping through elements with JS
     const style = document.createElement('style');
     style.innerHTML = `${selectors.join(', ')} { display: none !important; }`;
+    //style.textContent = `${selectors.join(', ')} { display: none !important; }`;
     
     // Append to the document head
     document.documentElement.appendChild(style);
