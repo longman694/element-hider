@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Element Hider",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Hide unwanted web elements using custom CSS selectors on a per-domain basis.",
   "permissions": [
     "storage",
-    "activeTab",
-    "scripting"
+    "activeTab"
   ],
   "host_permissions": [
     "http://*/*",
